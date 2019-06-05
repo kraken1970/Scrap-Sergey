@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PhotoPreviewCard from "./components/cards/PhotoPreviewCard";
+
+import user01 from "./images/PhotoPreviewCards/photoPreviewCard01.jpg";
+
+import "./App.scss";
+
+const cardData = {
+  userImg: user01,
+  description: "Police were not able to say they had a suspect -- until April",
+  name: "Ivan",
+  sport: "box",
+  organization: "killers"
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PhotoPreviewCard cardData={cardData} />
     </div>
   );
 }

@@ -1,0 +1,19 @@
+@import "./scss/lib_css/reset";
+@import "./scss/base/global_style";
+@import "./scss/font";
+
+@import "./scss/common_elements/buttons";
+
+body {
+  margin: 0;
+  font-family: "Proxima Nova", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

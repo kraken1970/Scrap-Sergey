@@ -1,0 +1,35 @@
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
+    local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"),
+    local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("/fonts/ProximaNova/ProximaNova-Regular.eot");
+  src: url("/fonts/ProximaNova/ProximaNova-Regular.eot#iefix")
+      format("embedded-opentype"),
+    url("/fonts/ProximaNova/ProximaNova-Regular.woff") format("woff"),
+    url("/fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Freshman";
+  src: url("/fonts/Freshman/Freshman.eot");
+  src: url("/fonts/Freshman/Freshman.eot#iefix") format("embedded-opentype"),
+    url("/fonts/Freshman/Freshman.woff") format("woff"),
+    url("/fonts/Freshman/Freshman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  font-family: "Proxima Nova";
+  color: #727682;
+}

@@ -1,0 +1,129 @@
+/*for demo only*/
+
+.btn-green {
+  background: #0fbe98;
+  border-radius: 4px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  height: 44px;
+}
+
+.btn-dropdown {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  background: #0fbe98;
+  border-radius: 4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  height: 44px;
+  width: 142px;
+  padding-right: 12px;
+  padding-left: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-dropdown::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  right: 12px;
+  background-image: url(/public/images/icon/drop.svg);
+}
+
+.btn-footer {
+  width: 208px;
+  position: relative;
+  padding-right: 12px;
+  padding-left: 12px;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.btn-footer::after {
+  content: "";
+  width: 10px;
+  height: 5px;
+  background-image: url(/public/images/icon/drop.svg);
+  position: absolute;
+  right: 12px;
+}
+
+.btn-success::after {
+  content: none;
+}
+
+.btn-subscribe {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 44px;
+  width: 208px;
+  font-size: 14px;
+  line-height: 17px;
+  border: 2px solid #0fbe98;
+  background: #ffffff;
+  color: #0fbe98;
+}
+
+.btn-user-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background: #f83371;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 13px;
+  padding: 1.5px 10px;
+}
+
+.btn-close {
+  width: 16px;
+  height: 16px;
+  background-image: url(/public/images/icon//close.svg);
+  background-color: transparent;
+  font-size: 0;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.btn-sign {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.btn-photo {
+  width: 18px;
+  height: 16px;
+  background-image: url(/public/images/icon/photo-icon.svg);
+  background-color: transparent;
+  font-size: 0;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 50px;
+  top: 16px;
+}
