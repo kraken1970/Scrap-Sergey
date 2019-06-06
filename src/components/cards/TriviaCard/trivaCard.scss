@@ -1,0 +1,85 @@
+.card3d {
+  width: 320px;
+  min-height: 238px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.triviaCard {
+  border: 3px solid #0fbe98;
+  box-sizing: inherit;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  backface-visibility: hidden;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.triviaCardBody {
+  padding: 40px 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.triviText {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.triviaTitle {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.front {
+  background: #ffffff;
+  color: #0fbe98;
+}
+
+.back {
+  background-color: #0fbe98;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+.trivaTextBack {
+  text-align: center;
+}
+
+.front.active {
+  transform: rotateY(180deg);
+}
+
+.back.active {
+  transform: rotateY(360deg);
+}
+
+.triviaCardBtn {
+  min-height: 50px;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  width: 100%;
+}
+
+.btnFront {
+  background-color: #0fbe98;
+  color: #ffffff;
+}
+
+.btnBack {
+  background-color: #ffffff;
+  color: #0fbe98;
+}

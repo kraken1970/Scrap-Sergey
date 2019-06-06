@@ -8,6 +8,7 @@ import "./App.scss";
 import photo01 from "./images/PhotoPreviewCards/photoPreviewCard01.jpg";
 import video01 from "./images/VideoPreviewCards/videoPreviewCard01.jpg";
 import article01 from "./images/ArticlePreviewCards/articlePreviewCard01.jpg";
+import TriviaCard from "./components/cards/TriviaCard";
 
 const PhotoCardData = {
   userImg: photo01,
@@ -32,6 +33,13 @@ const ArticleCardData = {
   title: "Title for article"
 };
 
+const TriviaCardData = {
+  category: "Category",
+  question:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation?",
+  answer: "Ut enim minim veniam nostrud exercitation"
+};
+
 function App() {
   return (
     <div className="App">
@@ -40,6 +48,8 @@ function App() {
       <VideoPreviewCard cardData={VideoCardData} />
       <div className="margin" />
       <ArticlePriviewCard cardData={ArticleCardData} />
+      <div className="margin" />
+      <TriviaCard cardData={TriviaCardData} />
     </div>
   );
 }
