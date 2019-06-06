@@ -1,23 +1,29 @@
 import React from "react";
-import "../cards.scss";
-import "./photo-preview-card.scss";
+import styles from "../cards.module.scss";
+import classNames from "classnames";
 
 const PhotoPreviewCard = ({ cardData }) => {
   const { userImg, description, name, sport, organization } = cardData;
   return (
-    <div className="card">
-      <div className="card-screen">
-        <img src={userImg} alt="userPhoto" className="card-screen-img" />
+    <div className={styles.card}>
+      <div className={styles.cardScreen}>
+        <img src={userImg} alt="userPhoto" className={styles.cardScreenImg} />
       </div>
 
-      <div className="card-description">
-        <p className="card-text">{description}</p>
-        <div className="card-tags">
-          <button className="btn-user-tag btn-card">#{sport}</button>
+      <div className={styles.cardDescription}>
+        <p className={styles.cardText}>{description}</p>
+        <div className="cardTags">
+          <button className={classNames("btnUserTag", styles.btnCard)}>
+            #{sport}
+          </button>
 
-          <button className="btn-user-tag btn-card">#{name}</button>
+          <button className={classNames("btnUserTag", styles.btnCard)}>
+            #{name}
+          </button>
 
-          <button className="btn-user-tag btn-card">#{organization}</button>
+          <button className={classNames("btnUserTag", styles.btnCard)}>
+            #{organization}
+          </button>
         </div>
       </div>
     </div>
