@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import styles from "./cards.module.scss";
+import styles from "../cards.module.scss";
 
 const ArticlePreviewCard = ({ cardData }) => {
   const { userImg, description, title } = cardData;

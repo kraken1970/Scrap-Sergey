@@ -1,12 +1,12 @@
 import React from "react";
 import classNames from "classnames";
 
-import styles from "./cards.module.scss";
+import styles from "../cards.module.scss";
 
 const VideoPreviewCard = ({ cardData }) => {
   const { userImg, description, name, sport, organization } = cardData;
   return (
-    <div className={styles.card}>
+    <div className={classNames(styles.card)}>
       <div className={classNames(styles.cardScreen, styles.cardScreenVideo)}>
         <img src={userImg} alt="userVideo" className={styles.cardScreenImg} />
       </div>
