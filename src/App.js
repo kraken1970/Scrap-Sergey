@@ -1,7 +1,7 @@
 import React from "react";
 import PhotoPreviewCard from "./components/cards/PhotoPreviewCard";
 import VideoPreviewCard from "./components/cards/VideoPreviewCard";
-import ArticlePriviewCard from "./components/cards/ArticlePriviewCard";
+import ArticlePriviewCard from "./components/cards/ArticlePreviewCard";
 
 import "./App.scss";
 

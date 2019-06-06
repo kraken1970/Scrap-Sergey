@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../cards.module.scss";
+import styles from "./cards.module.scss";
 import classNames from "classnames";
 
 const PhotoPreviewCard = ({ cardData }) => {
