@@ -4,24 +4,24 @@
   border-radius: 4px;
 }
 
-.cardScreen {
+.screen {
   cursor: pointer;
   border-radius: 4px 4px 0 0;
   width: 100%;
 }
 
-.cardScreenImg {
+.screenImg {
   border-radius: 4px 4px 0 0;
   width: 100%;
 }
 
-.cardDescription {
+.description {
   background-color: #ffffff;
   padding: 20px 18px;
   border-radius: 0 0 4px 4px;
 }
 
-.cardText {
+.text {
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 10px;
@@ -33,6 +33,7 @@
 
 .btnCard {
   margin-right: 10px;
+  cursor: pointer;
 }
 
 .btnCard:last-child {
@@ -40,11 +41,11 @@
 }
 
 /*for video cards only*/
-.cardScreenVideo {
+.screenVideo {
   position: relative;
 }
 
-.cardScreenVideo::before {
+.screenVideo::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -55,7 +56,7 @@
 }
 
 /*for article card only*/
-.cardTitle {
+.title {
   color: #1a051d;
   font-weight: 600;
   font-size: 24px;
@@ -64,7 +65,7 @@
 }
 
 /*Card big size*/
-.cardPost {
+.post {
   width: 100%;
   max-width: 992px;
 }

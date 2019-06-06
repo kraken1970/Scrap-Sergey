@@ -6,12 +6,12 @@ const PhotoPreviewCard = ({ cardData }) => {
   const { userImg, description, name, sport, organization } = cardData;
   return (
     <div className={styles.card}>
-      <div className={styles.cardScreen}>
-        <img src={userImg} alt="userPhoto" className={styles.cardScreenImg} />
+      <div className={styles.screen}>
+        <img src={userImg} alt="userPhoto" className={styles.screenImg} />
       </div>
 
-      <div className={styles.cardDescription}>
-        <p className={styles.cardText}>{description}</p>
+      <div className={styles.description}>
+        <p className={styles.text}>{description}</p>
         <div className="cardTags">
           <button className={classNames("btnUserTag", styles.btnCard)}>
             #{sport}

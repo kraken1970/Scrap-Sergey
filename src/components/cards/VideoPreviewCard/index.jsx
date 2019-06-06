@@ -7,13 +7,13 @@ const VideoPreviewCard = ({ cardData }) => {
   const { userImg, description, name, sport, organization } = cardData;
   return (
     <div className={classNames(styles.card)}>
-      <div className={classNames(styles.cardScreen, styles.cardScreenVideo)}>
-        <img src={userImg} alt="userVideo" className={styles.cardScreenImg} />
+      <div className={classNames(styles.screen, styles.screenVideo)}>
+        <img src={userImg} alt="userVideo" className={styles.screenImg} />
       </div>
 
-      <div className={styles.cardDescription}>
-        <p className={styles.cardText}>{description}</p>
-        <div className={styles.cardTags}>
+      <div className={styles.description}>
+        <p className={styles.text}>{description}</p>
+        <div className={styles.tags}>
           <button className={classNames("btnUserTag", styles.btnCard)}>
             #{sport}
           </button>

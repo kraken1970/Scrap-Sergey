@@ -1,4 +1,4 @@
-@import "./scss/lib_css/reset";
+@import "~reset-css";
 @import "./scss/base/global_style";
 @import "./scss/font";
 
@@ -17,3 +17,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+// @import "~reset-css";

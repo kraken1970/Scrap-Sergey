@@ -5,14 +5,14 @@ import styles from "../cards.module.scss";
 const ArticlePreviewCard = ({ cardData }) => {
   const { userImg, description, title } = cardData;
   return (
-    <div className={classNames(styles.card, styles.cardArticle)}>
-      <div className={styles.cardScreen}>
-        <img src={userImg} alt="userPhoto" className={styles.cardScreenImg} />
+    <div className={styles.card}>
+      <div className={styles.screen}>
+        <img src={userImg} alt="userPhoto" className={styles.screenImg} />
       </div>
 
-      <div className={styles.cardDescription}>
-        <h4 className={styles.card - title}>{title}</h4>
-        <p className={styles.cardText}>{description}</p>
+      <div className={styles.description}>
+        <h4 className={styles.title}>{title}</h4>
+        <p className={styles.text}>{description}</p>
       </div>
     </div>
   );
