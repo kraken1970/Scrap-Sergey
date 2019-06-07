@@ -1,86 +1,40 @@
 import React from "react";
+
 import PhotoPreviewCard from "./components/cards/PhotoPreviewCard";
 import VideoPreviewCard from "./components/cards/VideoPreviewCard";
 import ArticlePriviewCard from "./components/cards/ArticlePreviewCard";
-import PreviewItemList from "./components/PreviewItemList";
 
-import "./App.scss";
-
-import photo01 from "./images/PhotoPreviewCards/photoPreviewCard01.jpg";
-import video01 from "./images/VideoPreviewCards/videoPreviewCard01.jpg";
-import article01 from "./images/ArticlePreviewCards/articlePreviewCard01.jpg";
 import TriviaCard from "./components/cards/TriviaCard";
 
-const PhotoCardData = {
-  userImg: photo01,
-  description: "Police were not able to say they had a suspect -- until April",
-  name: "Ivan",
-  sport: "box",
-  organization: "killers"
-};
+import PreviewItemList from "./components/PreviewItemList";
+import HeadLineBlock from "./components/HeadLineBlock";
 
-const VideoCardData = {
-  userImg: video01,
-  description: "The Golden State Killer is believed to be linked to more t",
-  name: "Freddy Kruger",
-  sport: "mordoboy",
-  organization: "Hollywood"
-};
+import {
+  photoCardData,
+  videoCardData,
+  articleCardData,
+  triviaCardData,
+  videoCardsArray
+} from "./TEMPORARY/data";
 
-const ArticleCardData = {
-  userImg: article01,
-  description:
-    "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
-  title: "Title for article"
-};
-
-const TriviaCardData = {
-  category: "Category",
-  question:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation?",
-  answer: "Ut enim minim veniam nostrud exercitation"
-};
-
-const videoCardsArray = [
-  {
-    userImg: video01,
-    description: "The Golden State Killer is believed to be linked to more t",
-    name: "Freddy Kruger",
-    sport: "mordoboy",
-    organization: "Hollywood"
-  },
-  {
-    userImg: video01,
-    description: "The Golden State Killer is believed to be linked to more t",
-    name: "Freddy Kruger",
-    sport: "mordoboy",
-    organization: "Hollywood"
-  },
-  {
-    userImg: video01,
-    description: "The Golden State Killer is believed to be linked to more t",
-    name: "Freddy Kruger",
-    sport: "mordoboy",
-    organization: "Hollywood"
-  }
-];
-const videoItemObject = {
-  card: VideoPreviewCard,
-  cardsArray: videoCardsArray
-};
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <PhotoPreviewCard cardData={PhotoCardData} />
+      <PhotoPreviewCard cardData={photoCardData} />
       <div className="margin" />
-      <VideoPreviewCard cardData={VideoCardData} />
+      <VideoPreviewCard cardData={videoCardData} />
       <div className="margin" />
-      <ArticlePriviewCard cardData={ArticleCardData} />
+      <ArticlePriviewCard cardData={articleCardData} />
       <div className="margin" />
-      <TriviaCard cardData={TriviaCardData} />
+      <TriviaCard cardData={triviaCardData} />
       <div className="margin" />
-      <PreviewItemList cardsItems={videoItemObject} />
+      <PreviewItemList cardsItems={videoCardsArray} Card={PhotoPreviewCard} />
+      <div className="margin" />
+      <HeadLineBlock name="RRRRRR" link="All dhfgsdgf" />
+      <div className="margin" />
+      <div className="margin" />
     </div>
   );
 }
