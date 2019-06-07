@@ -1,0 +1,5 @@
+.previewItemList {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-gap: 16px;
+}

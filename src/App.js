@@ -2,6 +2,7 @@ import React from "react";
 import PhotoPreviewCard from "./components/cards/PhotoPreviewCard";
 import VideoPreviewCard from "./components/cards/VideoPreviewCard";
 import ArticlePriviewCard from "./components/cards/ArticlePreviewCard";
+import PreviewItemList from "./components/PreviewItemList";
 
 import "./App.scss";
 
@@ -40,6 +41,34 @@ const TriviaCardData = {
   answer: "Ut enim minim veniam nostrud exercitation"
 };
 
+const videoCardsArray = [
+  {
+    userImg: video01,
+    description: "The Golden State Killer is believed to be linked to more t",
+    name: "Freddy Kruger",
+    sport: "mordoboy",
+    organization: "Hollywood"
+  },
+  {
+    userImg: video01,
+    description: "The Golden State Killer is believed to be linked to more t",
+    name: "Freddy Kruger",
+    sport: "mordoboy",
+    organization: "Hollywood"
+  },
+  {
+    userImg: video01,
+    description: "The Golden State Killer is believed to be linked to more t",
+    name: "Freddy Kruger",
+    sport: "mordoboy",
+    organization: "Hollywood"
+  }
+];
+const videoItemObject = {
+  card: VideoPreviewCard,
+  cardsArray: videoCardsArray
+};
+
 function App() {
   return (
     <div className="App">
@@ -50,6 +79,8 @@ function App() {
       <ArticlePriviewCard cardData={ArticleCardData} />
       <div className="margin" />
       <TriviaCard cardData={TriviaCardData} />
+      <div className="margin" />
+      <PreviewItemList cardsItems={videoItemObject} />
     </div>
   );
 }
