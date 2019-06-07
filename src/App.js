@@ -18,6 +18,7 @@ import {
 } from "./TEMPORARY/data";
 
 import "./App.scss";
+import HomePageLayout from "./components/HomePageLayout";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
       <div className="margin" />
       <HeadLineBlock name="RRRRRR" link="All dhfgsdgf" />
       <div className="margin" />
-      <div className="margin" />
+      <HomePageLayout />
     </div>
   );
 }
