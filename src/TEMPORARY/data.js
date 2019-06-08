@@ -3,6 +3,11 @@ import video01 from "../images/VideoPreviewCards/videoPreviewCard01.jpg";
 import article01 from "../images/ArticlePreviewCards/articlePreviewCard01.jpg";
 import poll01 from "../images/PollsCard/poll01.jpg";
 
+//random id for key function
+export const idKey = () => {
+  return ((Math.random() * new Date().getTime()) / 100000000).toString();
+};
+
 export const photoCardData = {
   userImg: photo01,
   description: "Police were not able to say they had a suspect -- until April",
@@ -44,7 +49,7 @@ export const videoCardsArray = [
     name: "Freddy Kruger",
     sport: "mordoboy",
     organization: "Hollywood",
-    id: "v01"
+    id: idKey()
   },
   {
     userImg: video01,
@@ -52,7 +57,7 @@ export const videoCardsArray = [
     name: "Freddy Kruger",
     sport: "mordoboy",
     organization: "Hollywood",
-    id: "v02"
+    id: idKey()
   },
   {
     userImg: video01,
@@ -60,7 +65,7 @@ export const videoCardsArray = [
     name: "Freddy Kruger",
     sport: "mordoboy",
     organization: "Hollywood",
-    id: "v03"
+    id: idKey()
   }
 ];
 
@@ -71,7 +76,7 @@ export const photoCardsArray = [
     name: "Freddy Kruger",
     sport: "mordoboy",
     organization: "Hollywood",
-    id: "p01"
+    id: idKey()
   },
   {
     userImg: photo01,
@@ -79,7 +84,7 @@ export const photoCardsArray = [
     name: "Freddy Kruger",
     sport: "mordoboy",
     organization: "Hollywood",
-    id: "p02"
+    id: idKey()
   },
   {
     userImg: photo01,
@@ -87,7 +92,7 @@ export const photoCardsArray = [
     name: "Freddy Kruger",
     sport: "mordoboy",
     organization: "Hollywood",
-    id: "p03"
+    id: idKey()
   }
 ];
 
@@ -97,35 +102,35 @@ export const articleCardsArray = [
     description:
       "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
     title: "Title for article",
-    id: "a01"
+    id: idKey()
   },
   {
     userImg: article01,
     description:
       "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
     title: "Title for article",
-    id: "a02"
+    id: idKey()
   },
   {
     userImg: article01,
     description:
       "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
     title: "Title for article",
-    id: "a03"
+    id: idKey()
   }
 ];
 
 export const pollCardsArray = [
   {
     userImg: poll01,
-    id: "poll01"
+    id: idKey()
   },
   {
     userImg: poll01,
-    id: "poll02"
+    id: idKey()
   },
   {
     userImg: poll01,
-    id: "poll03"
+    id: idKey()
   }
 ];

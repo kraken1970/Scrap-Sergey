@@ -7,7 +7,10 @@ import ArticlePriviewCard from "./components/cards/ArticlePreviewCard";
 import TriviaCard from "./components/cards/TriviaCard";
 
 import PreviewItemList from "./components/PreviewItemList";
-import HeadLineBlock from "./components/HeadLineBlock";
+import HeadLineBlock from "./components/Blocks/HeadLineBlock";
+
+import HomePageLayout from "./components/HomePageLayout";
+import EmailSubscriptionForm from "./components/Forms/EmailSubscriptionForm";
 
 import {
   photoCardData,
@@ -18,12 +21,11 @@ import {
 } from "./TEMPORARY/data";
 
 import "./App.scss";
-import HomePageLayout from "./components/HomePageLayout";
 
 function App() {
   return (
     <div className="App">
-      <PhotoPreviewCard cardData={photoCardData} />
+      {/* <PhotoPreviewCard cardData={photoCardData} />
       <div className="margin" />
       <VideoPreviewCard cardData={videoCardData} />
       <div className="margin" />
@@ -34,8 +36,10 @@ function App() {
       <PreviewItemList cardsItems={videoCardsArray} Card={PhotoPreviewCard} />
       <div className="margin" />
       <HeadLineBlock name="RRRRRR" link="All dhfgsdgf" />
-      <div className="margin" />
+      <div className="margin" /> */}
       <HomePageLayout />
+      <div className="margin" />
+      <EmailSubscriptionForm />
     </div>
   );
 }

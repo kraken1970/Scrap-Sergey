@@ -1,0 +1,20 @@
+.footerForm {
+  display: inline-flex;
+  height: 44px;
+}
+
+.emailInput {
+  width: 544px;
+  background: inherit;
+  color: #ffffff;
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  margin-right: 16px;
+}
+
+.emailInput[placeholder] {
+  color: #adafb6;
+}
