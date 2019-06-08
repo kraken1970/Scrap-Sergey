@@ -1,12 +1,12 @@
 import React from "react";
-import HeadLineBlock from "../HeadLineBlock";
-import ArticlePreviewCard from "../cards/ArticlePreviewCard";
-import ArticlePostCard from "../cards/ArticlePostCard";
-import PhotoPreviewCard from "../cards/PhotoPreviewCard";
-import VideoPreviewCard from "../cards/VideoPreviewCard";
-import VideoPostCard from "../cards/VideoPostCard";
-import PollCard from "../cards/PollCard";
-import PreviewItemList from "../PreviewItemList";
+import HeadLineBlock from "../../Blocks/HeadLineBlock";
+import ArticlePreviewCard from "../../cards/PhotoPreviewCard";
+import ArticlePostCard from "../../cards/ArticlePostCard";
+import PhotoPreviewCard from "../../cards/PhotoPreviewCard";
+import VideoPreviewCard from "../../cards/VideoPreviewCard";
+import VideoPostCard from "../../cards/VideoPostCard";
+import PollCard from "../../cards/PollCard";
+import PreviewItemList from "../../PreviewItemList";
 
 import classNames from "classnames";
 import styles from "./homePageLayout.module.scss";
@@ -18,7 +18,7 @@ import {
   videoCardsArray,
   pollCardsArray,
   articleCardsArray
-} from "../../TEMPORARY/data";
+} from "../../../TEMPORARY/data";
 
 const HomePageLayout = () => {
   return (

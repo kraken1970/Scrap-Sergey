@@ -9,7 +9,7 @@ import TriviaCard from "./components/cards/TriviaCard";
 import PreviewItemList from "./components/PreviewItemList";
 import HeadLineBlock from "./components/Blocks/HeadLineBlock";
 
-import HomePageLayout from "./components/HomePageLayout";
+import HomePageLayout from "./components/Layouts/HomePageLayout";
 import EmailSubscriptionForm from "./components/Forms/EmailSubscriptionForm";
 
 import {
