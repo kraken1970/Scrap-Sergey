@@ -1,24 +1,29 @@
 import React from "react";
+
 import EmailSubscriptionForm from "../../Forms/EmailSubscriptionForm";
+
+import { idKey } from "../../../TEMPORARY/helpers";
 
 import classNames from "classnames";
 import styles from "./footerBlock.module.scss";
 
-const list01 = ["About", "Sportlight", "Contact"];
-const list02 = ["Scrapbook", "Resources", "Help & FAQ"];
-const list03 = ["Advertising", "Terms of use", "Privacy Policy"];
+import faceboocIcon from "../../../images/social/facebook.svg";
+import twitIcom from "../../../images/social/twitter.svg";
+import insIcon from "../../../images/social/inst.svg";
 
-const listMenu = element => {
-  return element.map((item, index) => {
-    return (
-      <li key={index} className={styles.menuList}>
-        <a href="localhost:3000" className={styles.menuLink}>
-          {item}
-        </a>
-      </li>
-    );
-  });
-};
+const socialIcon = [faceboocIcon, twitIcom, insIcon];
+
+const footerList = [
+  "About",
+  "Scrapbook",
+  "Advertising",
+  "Sportlight",
+  "Resources",
+  "Terms of use",
+  "Contact",
+  "Help & FAQ",
+  "Privacy Policy"
+];
 
 const FooterBlock = () => {
   return (
@@ -57,16 +62,34 @@ const FooterBlock = () => {
             </div>
 
             <div className={styles.menu}>
-              <div className={styles.menuGroup01}>
-                <ul className={styles.groupItems}>{listMenu(list01)}</ul>
-              </div>
+              <ul className={styles.groupItems}>
+                {footerList.map(item => {
+                  return (
+                    <li key={idKey()} className={styles.menuList}>
+                      <a href="localhost:3000" className={styles.menuLink}>
+                        {item}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
 
-              <div className={styles.menuGroup02}>
-                <ul className={styles.groupItems}>{listMenu(list02)}</ul>
-              </div>
+            <div className={styles.footerSocial}>
+              <p className={styles.footerSocialText}>Follow</p>
 
-              <div className={styles.menuGroup03}>
-                <ul className={styles.groupItems}>{listMenu(list03)}</ul>
+              <div className={styles.social}>
+                {socialIcon.map(item => {
+                  return (
+                    <a href="localhost:3000" className={styles.socialLink}>
+                      <img
+                        src={item}
+                        alt={item}
+                        className={styles.socialIcon}
+                      />
+                    </a>
+                  );
+                })}
               </div>
             </div>
           </div>

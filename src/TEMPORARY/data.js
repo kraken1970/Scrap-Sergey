@@ -1,12 +1,9 @@
+import { idKey } from "./helpers";
+
 import photo01 from "../images/PhotoPreviewCards/photoPreviewCard01.jpg";
 import video01 from "../images/VideoPreviewCards/videoPreviewCard01.jpg";
 import article01 from "../images/ArticlePreviewCards/articlePreviewCard01.jpg";
 import poll01 from "../images/PollsCard/poll01.jpg";
-
-//random id for key function
-export const idKey = () => {
-  return ((Math.random() * new Date().getTime()) / 100000000).toString();
-};
 
 export const photoCardData = {
   userImg: photo01,
