@@ -1,6 +1,6 @@
 import React from "react";
 import HeadLineBlock from "../../Blocks/HeadLineBlock";
-import ArticlePreviewCard from "../../cards/PhotoPreviewCard";
+import ArticlePreviewCard from "../../cards/ArticlePreviewCard";
 import ArticlePostCard from "../../cards/ArticlePostCard";
 import PhotoPreviewCard from "../../cards/PhotoPreviewCard";
 import VideoPreviewCard from "../../cards/VideoPreviewCard";
@@ -56,7 +56,6 @@ const HomePageLayout = () => {
             name="Poll: Who are the athletes playing tennis?"
             link="All polls"
           />
-
           <PreviewItemList cardsItems={pollCardsArray} Card={PollCard} />
         </section>
 
@@ -82,12 +81,11 @@ const HomePageLayout = () => {
 
         <section className={styles.pageSection}>
           <HeadLineBlock name="Articles showcase" link="All articles" />
-          <div className={styles.cardPost}>
-            <PreviewItemList
-              cardsItems={articleCardsArray}
-              Card={ArticlePreviewCard}
-            />
-          </div>
+
+          <PreviewItemList
+            cardsItems={articleCardsArray}
+            Card={ArticlePreviewCard}
+          />
         </section>
       </div>
 

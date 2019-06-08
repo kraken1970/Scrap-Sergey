@@ -2,7 +2,7 @@ import React from "react";
 // import classNames from "classnames";
 import styles from "../cards.module.scss";
 
-const ArticlePreviewCard = ({ cardData }) => {
+const PollCard = ({ cardData }) => {
   const { userImg } = cardData;
   return (
     <div className={styles.card}>
@@ -13,4 +13,4 @@ const ArticlePreviewCard = ({ cardData }) => {
   );
 };
 
-export default ArticlePreviewCard;
+export default PollCard;
