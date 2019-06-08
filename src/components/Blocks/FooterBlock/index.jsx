@@ -81,7 +81,11 @@ const FooterBlock = () => {
               <div className={styles.social}>
                 {socialIcon.map(item => {
                   return (
-                    <a href="localhost:3000" className={styles.socialLink}>
+                    <a
+                      key={idKey()}
+                      href="localhost:3000"
+                      className={styles.socialLink}
+                    >
                       <img
                         src={item}
                         alt={item}
