@@ -6,7 +6,11 @@ const HeadLineBlock = ({ name, link }) => {
   return (
     <div className={styles.headLineBlock}>
       <h4 className={styles.name}>{name}</h4>
-      <a href="#" className={styles.link}>
+      <a
+        href="localhost:3000"
+        className={styles.link}
+        rel="noopener noreferrer"
+      >
         {link}
       </a>
     </div>
