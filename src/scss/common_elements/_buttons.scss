@@ -1,6 +1,6 @@
 /*for demo only*/
 
-.btn-green {
+.btnGreen {
   background: #0fbe98;
   border-radius: 4px;
   color: #ffffff;
@@ -9,7 +9,7 @@
   height: 44px;
 }
 
-.btn-dropdown {
+.btnDropdown {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -30,7 +30,7 @@
   position: relative;
 }
 
-.btn-dropdown::after {
+.btnDropdown::after {
   content: "";
   position: absolute;
   width: 10px;
@@ -39,7 +39,7 @@
   background-image: url(/images/icon/drop.svg);
 }
 
-.btn-footer {
+.btnFooter {
   width: 208px;
   position: relative;
   padding-right: 12px;
@@ -49,7 +49,7 @@
   line-height: 17px;
 }
 
-.btn-footer::after {
+.btnFooter::after {
   content: "";
   width: 10px;
   height: 5px;
@@ -58,7 +58,7 @@
   right: 12px;
 }
 
-.btn-success::after {
+.btnSuccess::after {
   content: none;
 }
 
@@ -93,7 +93,7 @@
   padding: 1.5px 10px;
 }
 
-.btn-close {
+.btnClose {
   width: 16px;
   height: 16px;
   background-image: url(/images/icon//close.svg);
@@ -106,7 +106,7 @@
   top: 16px;
 }
 
-.btn-sign {
+.btnSign {
   border: none;
   outline: none;
   background-color: transparent;
@@ -115,7 +115,7 @@
   line-height: 25px;
 }
 
-.btn-photo {
+.btnPhoto {
   width: 18px;
   height: 16px;
   background-image: url(/images/icon/photo-icon.svg);

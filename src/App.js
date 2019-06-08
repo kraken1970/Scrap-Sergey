@@ -11,6 +11,7 @@ import HeadLineBlock from "./components/Blocks/HeadLineBlock";
 
 import HomePageLayout from "./components/Layouts/HomePageLayout";
 import EmailSubscriptionForm from "./components/Forms/EmailSubscriptionForm";
+import FooterBlock from "./components/Blocks/FooterBlock";
 
 import {
   photoCardData,
@@ -40,6 +41,8 @@ function App() {
       <HomePageLayout />
       <div className="margin" />
       <EmailSubscriptionForm />
+      <div className="margin" />
+      <FooterBlock />
     </div>
   );
 }
