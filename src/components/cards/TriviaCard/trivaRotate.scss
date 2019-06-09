@@ -1,0 +1,18 @@
+.trivaFront {
+  background: #ffffff;
+  color: #0fbe98;
+}
+
+.triviaBack {
+  background-color: #0fbe98;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+.trivaFront.active {
+  transform: rotateY(180deg);
+}
+
+.triviaBack.active {
+  transform: rotateY(360deg);
+}

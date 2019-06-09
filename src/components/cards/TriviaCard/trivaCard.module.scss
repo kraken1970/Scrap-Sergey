@@ -43,27 +43,8 @@
   margin-bottom: 20px;
 }
 
-.front {
-  background: #ffffff;
-  color: #0fbe98;
-}
-
-.back {
-  background-color: #0fbe98;
-  color: #ffffff;
-  transform: rotateY(180deg);
-}
-
 .trivaTextBack {
   text-align: center;
-}
-
-.front.active {
-  transform: rotateY(180deg);
-}
-
-.back.active {
-  transform: rotateY(360deg);
 }
 
 .triviaCardBtn {

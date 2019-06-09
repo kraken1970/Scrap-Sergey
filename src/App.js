@@ -26,7 +26,7 @@ import "./App.scss";
 function App() {
   return (
     <div className="App">
-      {/* <PhotoPreviewCard cardData={photoCardData} />
+      <PhotoPreviewCard cardData={photoCardData} />
       <div className="margin" />
       <VideoPreviewCard cardData={videoCardData} />
       <div className="margin" />
@@ -37,7 +37,7 @@ function App() {
       <PreviewItemList cardsItems={videoCardsArray} Card={PhotoPreviewCard} />
       <div className="margin" />
       <HeadLineBlock name="RRRRRR" link="All dhfgsdgf" />
-      <div className="margin" /> */}
+      <div className="margin" />
       <HomePageLayout />
       <div className="margin" />
       <EmailSubscriptionForm />

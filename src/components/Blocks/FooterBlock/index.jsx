@@ -28,7 +28,7 @@ const footerList = [
 const FooterBlock = () => {
   return (
     <div className={styles.footerBlock}>
-      <div className={classNames("mainWrapper")}>
+      <div className="mainWrapper">
         <div className={styles.content}>
           <div className={styles.subscribe}>
             <p className={styles.subscribeText}>

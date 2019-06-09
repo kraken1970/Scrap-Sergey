@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-// import styles from "./trivaCard.module.scss";
+import "./trivaRotate.scss";
+import styles from "./trivaCard.module.scss";
 import classNames from "classnames";
-import "./trivaCard.scss";
+// import "./trivaCard.scss";
 
 const TriviaCard = ({ cardData }) => {
   const { category, question, answer } = cardData;
@@ -13,34 +14,38 @@ const TriviaCard = ({ cardData }) => {
   };
 
   return (
-    <div className="card3d">
+    <div className={styles.card3d}>
       <div
-        className={classNames("triviaCard", "front", { active: activeCard })}
+        className={classNames(styles.triviaCard, "trivaFront", {
+          active: activeCard
+        })}
         onClick={setActiveCard}
       >
-        <div className="triviaCardBody">
-          <p className="triviaText">{question}</p>
+        <div className={styles.triviaCardBody}>
+          <p className={styles.TriviaCardtriviaText}>{question}</p>
         </div>
         <button
           type="button"
-          className={classNames("triviaCardBtn", "btnFront")}
+          className={classNames(styles.triviaCardBtn, styles.btnFront)}
         >
           {category}
         </button>
       </div>
       <div
-        className={classNames("triviaCard", "back", {
+        className={classNames(styles.triviaCard, "triviaBack", {
           active: activeCard
         })}
         onClick={setActiveCard}
       >
-        <div className="triviaCardBody">
-          <h5 className="triviaTitle">Answer</h5>
-          <p className={classNames("triviaText", "trivaTextBack")}>{answer}</p>
+        <div className={styles.triviaCardBody}>
+          <h5 className={styles.triviaTitle}>Answer</h5>
+          <p className={classNames(styles.triviaText, styles.trivaTextBack)}>
+            {answer}
+          </p>
         </div>
         <button
           type="button"
-          className={classNames("triviaCardBtn", "btnBack")}
+          className={classNames(styles.triviaCardBtn, styles.btnBack)}
         >
           {category}
         </button>
